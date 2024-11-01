@@ -30,7 +30,7 @@
 {
     background-image:url(../assets/hotelMarkupAssets/bg2.jpg);
     width: 100%;
-    height: 738px;
+    height: auto;
 }
 
 .hamster-images
@@ -53,13 +53,6 @@
     background-size: cover;
 }
 
-/* #hotel-pool
-{
-    background-image: url(../assets/hotelMarkupAssets/header.jpg);
-    width: 100%;
-    
-    background-repeat: no-repeat;
-} */
 
 .fs-1
 {
@@ -74,4 +67,88 @@
 .hero-text-bg
 {
     background-color: #000324CC;
+    width: 945px; 
+    height: 232px;
+}
+
+.card-width-height
+{
+    width: 369px; 
+    height: 522px;
+}
+.card-one-responive{
+    display: flex;
+    justify-content: end;
+}
+
+.card-three-responsive
+{
+    display: flex;
+    justify-content: start;
+}
+.navbar-btn-responsive
+{
+    display: flex;
+    justify-content: center;
+}
+#hotel-pool
+{
+    background-image: url(../assets/hotelMarkupAssets/header.jpg); 
+    height: 500px;
+}
+#hamster-on-chair{
+    width: 369px; 
+    height: auto;
+}
+/*Media Query example*/
+
+@media only screen and (max-width:900px) {
+	.all-cards {
+		float: none;
+		width: auto;
+		
+	}
+
+    .card-one-responive{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .card-three-responsive
+{
+    display: flex;
+    justify-content: center;
+}
+.hamster-images
+{
+    width: 100%;
+}
+.reverse-column-small{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.navbar-btn-responsive{
+    display: flex;
+    justify-content: start;
+}
+.hero-text-bg{
+    width: 100%;
+}
+.custom-text-center
+{
+    text-align: center;
+}
+#amenities-background{
+    height: auto;
+}
+#extra-margin-bottom{
+    margin-bottom: 2rem;
+}
+}
+@media only screen and (max-width:500px)
+{
+    h1{
+        font-size: 100%;
+        color: red;
+    }
 }
